@@ -1,0 +1,49 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+             Value Std. Error     z        p
+(Intercept)  2.283    0.00913 250.2 0.00e+00
+Group25-2   -0.150    0.01376 -10.9 1.36e-27
+Group28-3   -0.754    0.01672 -45.1 0.00e+00
+Group30-4   -0.952    0.01902 -50.1 0.00e+00
+Log(scale)  -0.397    0.00698 -56.9 0.00e+00
+
+Scale= 0.672 
+
+Weibull distribution
+Loglik(model)= -45380   Loglik(intercept only)= -46811.1
+	Chisq= 2862.09 on 3 degrees of freedom, p= 0 
+Number of Newton-Raphson Iterations: 6 
+n= 13701 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+          Residual_Analysis
+loglikR        -46811.06413
+loglikF        -45380.01822
+ModelDev        14951.45549
+loglikSat      -37904.29047
+nullDev         17813.54732
+VIF               204.81446
+sqrt(VIF)          14.31134
+
+
+            Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time.      SE.DR
+(Intercept)  20-1    20      8.5     7.665933 2.036786  0.1304473 0.01703555
+Group25-2    25-2    25      7.5     6.599427 1.886983  0.1515283 0.02984456
+Group28-3    28-3    28      3.5     3.607831 1.283107  0.2771748 0.06632280
+Group30-4    30-4    30      2.5     2.959215 1.084924  0.3379275 0.09196040
+            Low.Lim_DR Up.Lim_DR   SE.Time DF              ScaleVal
+(Intercept) 0.09649547 0.1643991 1.0011200 73 0.67211&plusmn0.06713
+Group25-2   0.09204820 0.2110084 1.2998030 73 0.67211&plusmn0.06713
+Group28-3   0.14499367 0.4093560 0.8632872 73 0.67211&plusmn0.06713
+Group30-4   0.15465070 0.5212043 0.8052927 73 0.67211&plusmn0.06713
+            Low.Lim_LogT Up.Lim_LogT SE.LogTime
+(Intercept)    1.5066674    2.566905  0.2659908
+Group25-2      1.1462766    2.627689  0.3716544
+Group28-3      0.6712095    1.895004  0.3070237
+Group30-4      0.4965095    1.673338  0.2952409
+
+ *VIF is included as correction factor in SE 
+

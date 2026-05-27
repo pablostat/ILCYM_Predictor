@@ -1,0 +1,53 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+             Value Std. Error      z         p
+(Intercept)  3.170     0.0220 144.13  0.00e+00
+Group25     -0.105     0.0319  -3.29  1.00e-03
+Group28     -0.672     0.0325 -20.66  8.38e-95
+Group30     -0.941     0.0361 -26.07 9.06e-150
+Log(scale)  -2.319     0.0608 -38.15  0.00e+00
+
+Scale= 0.0983 
+
+Log logistic distribution
+Loglik(model)= -487.6   Loglik(intercept only)= -669.8
+	Chisq= 364.34 on 3 degrees of freedom, p= 0 
+Number of Newton-Raphson Iterations: 5 
+n= 200 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+        Model      AIC Deviance    LogLik
+1     weibull 989.4421 121.4084 -491.7210
+2   lognormal 993.4522 125.4186 -493.7261
+3 loglogistic 981.2209 113.1872 -487.6104
+
+
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  20-2    20     24.0       23.816    3.170      0.042 0.002      0.039
+2  25-3    25     21.5       21.445    3.065      0.047 0.003      0.041
+3  28-4    28     12.5       12.165    2.499      0.082 0.005      0.073
+4  30-5    30      9.5        9.296    2.230      0.108 0.007      0.094
+  Up.Lim_DR SE.Time DF
+1     0.045   0.904 38
+2     0.052   1.179 38
+3     0.092   0.683 38
+4     0.121   0.579 38
+
+ *VIF is included as correction factor in SE 
+
+
+ MODEL CHECKING CONSIDERING TEMPERATURE: SUMMARY 
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  20-2    20     24.0       23.816    3.170      0.042 0.002      0.039
+2  25-3    25     21.5       21.445    3.065      0.047 0.003      0.041
+3  28-4    28     12.5       12.165    2.499      0.082 0.005      0.073
+4  30-5    30      9.5        9.296    2.230      0.108 0.007      0.094
+  Up.Lim_DR SE.Time DF Frequency NBatchs Sex     ScaleU   ScaleErr Surv  N
+1     0.045   0.904 38        50       1  NA -0.9408047 0.03609435    1 50
+2     0.052   1.179 38        50       1  NA -0.9408047 0.03609435    1 50
+3     0.092   0.683 38        50       1  NA -0.9408047 0.03609435    1 50
+4     0.121   0.579 38        50       1  NA -0.9408047 0.03609435    1 50
+

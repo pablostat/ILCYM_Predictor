@@ -1,0 +1,30 @@
+FECUNDYTY FOR TEMPERATURE
+   T Fecundity
+1 20    113.36
+2 25     82.66
+3 28     45.58
+4 30     32.42
+
+NONLINEAR REGRESSION MODEL
+
+Method: Marquardtr
+Formula:  f(T) = 1 - H/(exp(1+exp(-(x-Topt)/B)).(1+exp(-(Topt-x)/B))) 
+
+Parameters
+     Estimate Std.Error t value Pr(>|t|)
+Topt   17.105   0.69356   24.66  0.01290
+B      7.9129   0.52014   15.21  0.02089
+H    -49.5748   0.51489  -96.28  0.99669
+
+Analysis of Variance
+      DF     SS     MS       Fc      p
+Model  2 0.9588 0.4794 232.6463 0.0463
+Error  1 0.0021 0.0021                
+Total  3 0.9608                       
+
+Selection criteria               
+R2       0.9979
+R2_Adj   0.9936
+SSR      0.0021
+AIC    -10.9328
+MSC     -1.4985
