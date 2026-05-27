@@ -1,0 +1,68 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+                Value Std. Error         z         p
+(Intercept)  5.88e-01     0.0668  8.80e+00  1.37e-18
+Group12     -2.20e-17     0.0930 -2.36e-16  1.00e+00
+Group15     -1.25e-01     0.1222 -1.02e+00  3.08e-01
+Group20      2.17e+00     0.0800  2.72e+01 2.09e-162
+Group25      1.77e+00     0.0831  2.13e+01 2.29e-100
+Group30      8.68e-01     0.0846  1.03e+01  1.04e-24
+Group32      8.92e-01     0.1069  8.34e+00  7.57e-17
+Log(scale)  -1.91e+00     0.1327 -1.44e+01  3.99e-47
+
+Scale= 0.148 
+
+Weibull distribution
+Loglik(model)= -69.3   Loglik(intercept only)= -165.4
+	Chisq= 192.2 on 6 degrees of freedom, p= 0 
+Number of Newton-Raphson Iterations: 13 
+n= 60 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+        Model      AIC Deviance    LogLik
+1     weibull 144.5197 32.15634 -69.25985
+2   lognormal 146.3166 33.95320 -70.15828
+3 loglogistic 147.9683 35.60499 -70.98417
+
+
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  10-1    10      1.5        1.706    0.534      0.586 0.059      0.459
+2  12-2    12      1.5        1.706    0.534      0.586 0.083      0.409
+3  15-3    15      1.5        1.506    0.409      0.664 0.123      0.400
+4  20-4    20     15.5       14.961    2.705      0.067 0.008      0.049
+5  25-5    25     10.5        9.987    2.301      0.100 0.013      0.073
+6  30-6    30      4.0        4.065    1.402      0.246 0.032      0.178
+7  32-7    32      3.5        4.161    1.426      0.240 0.039      0.157
+  Up.Lim_DR SE.Time DF
+1     0.714   0.173 14
+2     0.763   0.240 14
+3     0.928   0.279 14
+4     0.084   1.813 14
+5     0.127   1.258 14
+6     0.314   0.521 14
+7     0.324   0.674 14
+
+ *VIF is included as correction factor in SE 
+
+
+ MODEL CHECKING CONSIDERING TEMPERATURE: SUMMARY 
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  10-1    10      1.5        1.706    0.534      0.586 0.059      0.459
+2  12-2    12      1.5        1.706    0.534      0.586 0.083      0.409
+3  15-3    15      1.5        1.506    0.409      0.664 0.123      0.400
+4  20-4    20     15.5       14.961    2.705      0.067 0.008      0.049
+5  25-5    25     10.5        9.987    2.301      0.100 0.013      0.073
+6  30-6    30      4.0        4.065    1.402      0.246 0.032      0.178
+7  32-7    32      3.5        4.161    1.426      0.240 0.039      0.157
+  Up.Lim_DR SE.Time DF Frequency NBatchs Sex   ScaleU  ScaleErr Surv  N
+1     0.714   0.173 14         8       1  NA 0.891693 0.1069464    1  8
+2     0.763   0.240 14         8       1  NA 0.891693 0.1069464    1  8
+3     0.928   0.279 14        10       1  NA 0.891693 0.1069464    1 10
+4     0.084   1.813 14        11       1  NA 0.891693 0.1069464    1 11
+5     0.127   1.258 14         9       1  NA 0.891693 0.1069464    1  9
+6     0.314   0.521 14        10       1  NA 0.891693 0.1069464    1 10
+7     0.324   0.674 14         4       1  NA 0.891693 0.1069464    1  4
+

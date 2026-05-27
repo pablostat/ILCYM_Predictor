@@ -1,0 +1,26 @@
+
+NONLINEAR REGRESSION MODEL
+
+Model name: Janish-2
+Method: Marquardtr
+Formula:  r(T) = 2.c/(a^(T-Tm) + b^(Tm-T)) 
+
+Parameters
+   Estimate Std.Error t value     Pr(>|t|)
+c    0.2016   0.03037   6.638 6.965173e-03
+a    2.3572   1.30299   1.809 1.681474e-01
+b    1.1214   0.01444   77.68 4.702434e-06
+Tm  31.4971   0.60113    52.4 1.531103e-05
+
+Analysis of variance
+      DF     SS     MS     Fc      p
+Model  3 3.7768 1.2589 53.015 0.0043
+Error  3 0.0712 0.0237              
+Total  6 3.8480                     
+
+Selection criteria              
+R2      0.9810
+R2_Adj  0.9630
+SSR     0.0712
+AIC    57.7520
+MSC    -1.1620

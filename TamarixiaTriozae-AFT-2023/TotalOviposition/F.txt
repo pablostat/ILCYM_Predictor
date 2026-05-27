@@ -1,0 +1,38 @@
+FECUNDYTY FOR TEMPERATURE
+    T Fecundity
+1  20 108.17143
+2  25  98.29412
+3  30  34.66667
+4  32   4.75000
+5  20 108.17143
+6  25  98.29412
+7  30  34.66667
+8  20 108.17143
+9  25  98.29412
+10 30  34.66667
+11  5   0.10000
+12 40   0.10000
+
+NONLINEAR REGRESSION MODEL
+
+Method: Newton
+Formula:  f(T) = aT²+bT+c 
+
+Parameters
+  Estimate Std. Error   t value Pr(>|t|)
+a -0.02330    0.00098 -23.87476        0
+b  1.03919    0.04533  22.92509        0
+c -6.84794    0.52894 -12.94657        0
+
+Analysis of Variance
+      DF      SS      MS       Fc p
+Model  2 74.0779 37.0389 285.0033 0
+Error  9  1.1696  0.1300           
+Total 11 75.2475                   
+
+Selection criteria              
+R2      0.9845
+R2_Adj  0.9810
+SSR     1.1696
+AIC    14.1160
+MSC    -0.5157
