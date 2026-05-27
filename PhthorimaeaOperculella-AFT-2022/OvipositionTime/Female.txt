@@ -1,0 +1,61 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+             Value Std. Error      z         p
+(Intercept)  1.996    0.03071  64.99  0.00e+00
+Group15-2   -0.505    0.04467 -11.30  1.33e-29
+Group16-3   -0.415    0.04721  -8.79  1.48e-18
+Group20-4   -0.691    0.03700 -18.67  8.93e-78
+Group23-5   -1.012    0.04386 -23.08 8.17e-118
+Group26.2-6 -0.781    0.03912 -19.98  8.98e-89
+Group30-7   -1.231    0.04522 -27.23 2.61e-163
+Log(scale)  -0.176    0.00906 -19.43  4.15e-84
+
+Scale= 0.839 
+
+Log Normal distribution
+Loglik(model)= -19688.1   Loglik(intercept only)= -20142.4
+	Chisq= 908.71 on 6 degrees of freedom, p= 0 
+Number of Newton-Raphson Iterations: 3 
+n= 6249 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+          Residual_Analysis
+loglikR       -20142.405791
+loglikF       -19688.051734
+ModelDev       10292.093607
+loglikSat     -14542.004931
+nullDev        11200.801720
+VIF               80.406981
+sqrt(VIF)          8.966994
+
+
+             Group Tempr Time.Obs Time.Median.  Log.Time DR.1.Time.      SE.DR
+(Intercept)   11-1  11.0      8.5     7.360391 1.9961131  0.1358623 0.03741561
+Group15-2     15-2  15.0      4.5     4.443413 1.4914229  0.2250522 0.09014076
+Group16-3     16-3  16.0      4.5     4.860276 1.5810953  0.2057496 0.08709541
+Group20-4     20-4  20.0      4.5     3.689353 1.3054510  0.2710503 0.08991912
+Group23-5     23-5  23.0      2.5     2.675217 0.9840306  0.3738014 0.14701237
+Group26.2-6 26.2-6  26.2      3.5     3.369109 1.2146483  0.2968144 0.10412164
+Group30-7     30-7  30.0      1.5     2.148229 0.7646438  0.4654997 0.18875047
+            Low.Lim_DR Up.Lim_DR   SE.Time  DF              ScaleVal
+(Intercept) 0.06182917 0.2098955 2.0270039 128 0.83853&plusmn0.06814
+Group15-2   0.04669331 0.4034111 1.7797322 128 0.83853&plusmn0.06814
+Group16-3   0.03341648 0.3780828 2.0573925 128 0.83853&plusmn0.06814
+Group20-4   0.09312992 0.4489706 1.2239182 128 0.83853&plusmn0.06814
+Group23-5   0.08291234 0.6646905 1.0521362 128 0.83853&plusmn0.06814
+Group26.2-6 0.09079193 0.5028368 1.1818738 128 0.83853&plusmn0.06814
+Group30-7   0.09202465 0.8389747 0.8710623 128 0.83853&plusmn0.06814
+            Low.Lim_LogT Up.Lim_LogT SE.LogTime
+(Intercept)    0.9084049    3.083821  0.5497166
+Group15-2      0.3094370    2.673409  0.5973636
+Group16-3      0.2567909    2.905400  0.6692898
+Group20-4      0.4485387    2.162363  0.4330747
+Group23-5      0.2182664    1.749795  0.3870094
+Group26.2-6    0.3715463    2.057750  0.4260952
+Group30-7      0.1511625    1.378125  0.3100472
+
+ *VIF is included as correction factor in SE 
+
