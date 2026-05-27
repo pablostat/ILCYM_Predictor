@@ -1,0 +1,32 @@
+MORTALITY FOR TEMPERATURE
+   T Mortality
+1 10     0.529
+2 15     0.290
+3 17     0.229
+4 20     0.282
+5 24     0.573
+6 28     0.587
+
+NONLINEAR REGRESSION MODEL
+
+Method: Newton
+Formula:  m(T) = aT²+bT+c 
+
+Parameters
+  Estimate Std. Error  t value Pr(>|t|)
+a  0.01501    0.00548  2.73704  0.07152
+b -0.53254    0.21212 -2.51062  0.08689
+c  3.79981    1.92043  1.97863  0.14225
+
+Analysis of Variance
+      DF     SS     MS    Fc      p
+Model  2 1.8915 0.9457 4.629 0.1211
+Error  3 0.6129 0.2043             
+Total  5 2.5044                    
+
+Selection criteria              
+R2      0.7553
+R2_Adj  0.5921
+SSR     0.6129
+AIC    11.3397
+MSC    -1.2807
