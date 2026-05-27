@@ -1,0 +1,40 @@
+Insect,Related crop,ID
+P. operculella,potato,Pt
+P. operculella,eggplant,Ep
+P. operculella,bell pepper,Bp
+P. operculella,Cape gooseberry,Cg
+P. operculella,aubergine,Ag
+P. operculella,sugar beet,Sb
+B. cockerelli,tobacco,Tc
+B. cockerelli,tomato,Tm
+B. cockerelli,potato,Pt
+B. cockerelli,eggplant,Ep
+B. cockerelli,bell pepper,Bp
+B. cockerelli,sweet potato,Sp
+B. cockerelli,tobacco,Tc
+T. vaporariorum,potato,Pt
+T. vaporariorum,tomato,Tm
+T. vaporariorum,cassava,Cv
+T. vaporariorum,bean,Bn
+T. vaporariorum,cotton,Cn
+T. vaporariorum,lantana,Ln
+T. vaporariorum,sunflower,Sf
+T. vaporariorum,faba bean,Fb
+T. vaporariorum,cucurbits,Cb
+T. vaporariorum,eggplant,Ep
+S. tangolias,potato,Pt
+S. tangolias,tomato,Tm
+S. tangolias,eggplant,Ep
+S. tangolias,sweet cucumber,Sc
+S. tangolias,poroporo,Pp
+S. tangolias,kangaroo apple,Ka
+S. tangolias,black nightshade,Bn
+S. tangolias,cayenne pepper,Cp
+S. tangolias,potato,Pt
+T. absoluta,potato,Pt
+T. absoluta,tomato,Tm
+T. absoluta,eggplant,Ep
+T. absoluta,sweet cucumber,Sc
+T. absoluta,tobacco,Tc
+T. solanivora,potato,Pt
+C. koehleri,potato,Pt
