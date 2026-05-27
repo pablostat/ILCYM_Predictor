@@ -1,0 +1,13 @@
+name: OlfactometerOnlineAnalysis
+title: OlfactometerOnlineAnalysis
+username:
+account: ilcym
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8185483
+bundleId: 6806970
+url: https://ilcym.shinyapps.io/OlfactometerOnlineAnalysis/
+when: 1675441446.05759
+lastSyncTime: 1675441446.05759
+asMultiple: FALSE
+asStatic: FALSE

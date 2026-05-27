@@ -1,0 +1,13 @@
+name: GISClustering
+title: GISClustering
+username:
+account: pablostat
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8472202
+bundleId: 6913192
+url: https://pablostat.shinyapps.io/GISClustering/
+when: 1677874114.38318
+lastSyncTime: 1677874114.38318
+asMultiple: FALSE
+asStatic: FALSE

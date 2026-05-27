@@ -1,0 +1,13 @@
+name: OnlineCourseHouse
+title: OnlineCourseHouse
+username:
+account: ilcym
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7346807
+bundleId: 6795343
+url: https://ilcym.shinyapps.io/OnlineCourseHouse/
+when: 1675204174.1685
+lastSyncTime: 1675204174.1685
+asMultiple: FALSE
+asStatic: FALSE

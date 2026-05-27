@@ -1,0 +1,13 @@
+name: OlfactometerOnlineAnalysisV2
+title: OlfactometerOnlineAnalysisV2
+username:
+account: pablostat
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8228289
+bundleId: 6823515
+url: https://pablostat.shinyapps.io/OlfactometerOnlineAnalysisV2/
+when: 1675863122.74177
+lastSyncTime: 1675863122.74177
+asMultiple: FALSE
+asStatic: FALSE

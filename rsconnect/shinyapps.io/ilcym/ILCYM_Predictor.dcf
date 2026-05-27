@@ -1,0 +1,12 @@
+name: ILCYM_Predictor
+title: ILCYM_Predictor
+username: ilcym
+account: ilcym
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11227532
+bundleId: 10056764
+url: https://ilcym.shinyapps.io/ILCYM_Predictor/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
