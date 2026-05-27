@@ -1,0 +1,29 @@
+
+NONLINEAR REGRESSION MODEL
+
+Model name: Sharpe & DeMichele 1
+Method: Marquardtr
+Formula:  r(T) = (p(T/To)exp((Ha/1.987)(1/To-1/T)))/(1+exp((Hl/1.987)(1/Tl-1/T))+exp((Hh/1.987)(1/Th-1/T))) 
+
+Parameters
+    Estimate Std.Error    t value             Pr(>|t|)
+p     0.1166                                          
+To  293.4052                                          
+Ha  16231.54 564.88926      28.73 1.59071218419626e-08
+Tl    282.42   0.16742       1687                    0
+Hl -90443.77   0.40428 -2.237e+05  9.4169911293625e-36
+Hh  106016.5  16.75242       6328                    0
+Th    303.75   0.19739       1539                    0
+
+Analysis of variance
+      DF     SS     MS       Fc p
+Model  4 6.7728 1.6932 1588.681 0
+Error  7 0.0075 0.0011           
+Total 11 6.7802                  
+
+Selection criteria               
+R2       0.9990
+R2_Adj   0.9980
+SSR      0.0075
+AIC    -25.7420
+MSC     -0.8350
