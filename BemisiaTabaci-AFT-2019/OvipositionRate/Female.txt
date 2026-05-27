@@ -1,0 +1,24 @@
+
+NONLINEAR REGRESSION MODEL
+
+Model name: Exponential simple
+Method: Marquardtr
+Formula:  r(T) =b1.exp(b2.T) 
+
+Parameters
+   Estimate Std.Error t value    Pr(>|t|)
+b1    8e-04   0.00044   1.816 0.166911286
+b2   0.1368   0.02191   6.244 0.008286914
+
+Analysis of variance
+      DF     SS     MS      Fc      p
+Model  1 2.4553 2.4553 38.9859 0.0083
+Error  3 0.1889 0.0630               
+Total  4 2.6443                      
+
+Selection criteria              
+R2      0.9290
+R2_Adj  0.9050
+SSR     0.1889
+AICc   27.8110
+MSC    -0.8740

@@ -1,0 +1,58 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+             Value Std. Error      z         p
+(Intercept)  3.254     0.0534  60.94  0.00e+00
+Group20     -0.541     0.0643  -8.41  3.96e-17
+Group25     -0.667     0.0586 -11.37  5.68e-30
+Group28     -1.559     0.0586 -26.60 6.91e-156
+Group32     -2.241     0.0632 -35.44 3.66e-275
+Log(scale)  -2.015     0.0513 -39.30  0.00e+00
+
+Scale= 0.133 
+
+Log logistic distribution
+Loglik(model)= -645.1   Loglik(intercept only)= -999.9
+	Chisq= 709.49 on 4 degrees of freedom, p= 0 
+Number of Newton-Raphson Iterations: 6 
+n= 300 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+        Model      AIC Deviance    LogLik
+1     weibull 1445.023 340.7707 -719.5115
+2   lognormal 1329.100 224.8472 -661.5498
+3 loglogistic 1296.270 192.0172 -645.1348
+
+
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  18-1    18     25.5       25.904    3.254      0.039 0.004      0.031
+2  20-2    20     15.5       15.084    2.714      0.066 0.008      0.050
+3  25-3    25     13.5       13.298    2.588      0.075 0.008      0.059
+4  28-4    28      5.5        5.450    1.696      0.183 0.020      0.143
+5  32-5    32      2.5        2.755    1.013      0.363 0.043      0.277
+  Up.Lim_DR SE.Time DF
+1     0.046   2.585 55
+2     0.082   1.811 55
+3     0.092   1.457 55
+4     0.224   0.597 55
+5     0.449   0.325 55
+
+ *VIF is included as correction factor in SE 
+
+
+ MODEL CHECKING CONSIDERING TEMPERATURE: SUMMARY 
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  18-1    18     25.5       25.904    3.254      0.039 0.004      0.031
+2  20-2    20     15.5       15.084    2.714      0.066 0.008      0.050
+3  25-3    25     13.5       13.298    2.588      0.075 0.008      0.059
+4  28-4    28      5.5        5.450    1.696      0.183 0.020      0.143
+5  32-5    32      2.5        2.755    1.013      0.363 0.043      0.277
+  Up.Lim_DR SE.Time DF Frequency NBatchs Sex    ScaleU   ScaleErr      Surv  N
+1     0.046   2.585 55        31       1  NA -2.241159 0.06323202 0.7750000 40
+2     0.082   1.811 55        45       1  NA -2.241159 0.06323202 0.9183673 49
+3     0.092   1.457 55        79       1  NA -2.241159 0.06323202 0.9753086 81
+4     0.224   0.597 55        85       1  NA -2.241159 0.06323202 0.9444444 90
+5     0.449   0.325 55        60       1  NA -2.241159 0.06323202 0.9523810 63
+

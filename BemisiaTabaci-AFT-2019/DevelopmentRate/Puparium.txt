@@ -1,0 +1,25 @@
+
+NONLINEAR REGRESSION MODEL
+
+Model name: Janish-1 
+Method: Marquardtr
+Formula:  r(T) = 2/(Dmin.(exp(K.(T-Topt)) + exp((-K).(T-Topt)))) 
+
+Parameters
+     Estimate Std.Error t value     Pr(>|t|)
+Dmin     0.07   3.40459 0.02055 9.854714e-01
+Topt  61.9961   0.00912    6799 2.163012e-08
+K     -0.1499   0.03340  -4.488 4.623287e-02
+
+Analysis of variance
+      DF     SS     MS      Fc      p
+Model  2 2.9471 1.4736 12.9508 0.0717
+Error  2 0.2276 0.1138               
+Total  4 3.1747                      
+
+Selection criteria              
+R2      0.9280
+R2_Adj  0.8570
+SSR     0.2276
+AIC        Inf
+MSC    -1.2740

@@ -1,0 +1,26 @@
+
+NONLINEAR REGRESSION MODEL
+
+Model name: Tb Model (Logan)
+Method: Marquardtr
+Formula:  r(T) = sy.exp(b.(T-Tb)-exp(b.(T-Tb)/DTb)) 
+
+Parameters
+    Estimate Std.Error t value    Pr(>|t|)
+sy    0.5567   0.10611   5.246 0.013483772
+b     0.1606   0.03370   4.766 0.017542096
+Tb   34.2965   2.78413   12.32 0.001152341
+DTb   0.6791   0.65705   1.034 0.377382744
+
+Analysis of variance
+      DF     SS     MS       Fc      p
+Model  3 4.2965 1.4322 100.9221 0.0016
+Error  3 0.0426 0.0142                
+Total  6 4.3390                       
+
+Selection criteria              
+R2      0.9900
+R2_Adj  0.9800
+SSR     0.0426
+AIC    54.1480
+MSC    -1.1530

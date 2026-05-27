@@ -1,0 +1,31 @@
+MORTALITY FOR TEMPERATURE
+   T Mortality
+1 18     0.570
+2 20     0.155
+3 25     0.047
+4 28     0.062
+5 32     0.160
+
+NONLINEAR REGRESSION MODEL
+
+Method: Marquardtr
+Formula:  m(T) = 1-rm.exp((-0.5).(-(x-Topt)/Troh)^2) 
+
+Parameters
+     Estimate Std.Error t value Pr(>|t|)
+rm     0.9925   0.10256   9.677  0.00526
+Topt   26.819   1.41974   18.89  0.00140
+Troh   8.1483   2.10094   3.878  0.03025
+
+Analysis of Variance
+      DF     SS     MS     Fc      p
+Model  2 0.1437 0.0718 3.6589 0.2146
+Error  2 0.0393 0.0196              
+Total  4 0.1830                     
+
+Selection criteria              
+R2      0.7854
+R2_Adj  0.5707
+SSR     0.0393
+AIC    -2.0438
+MSC    -1.5199
