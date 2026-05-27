@@ -1,0 +1,26 @@
+NONLINEAR REGRESSION MODEL
+Method: Marquardtr
+Formula:  r(T) = min(TRmax*exp((-1)*k1l*(Topt-x)),TRmax*((1-Lambda)*exp(((-1)*k1h-k2h)*(x-Topt))+Lambda*exp((-1)*k2h*(x-Topt))))
+
+Parameters
+  Estimate Std.Error t value     Pr(>|t|)
+1  14.8871   0.05435   273.9 0.000000e+00
+2   0.7436   0.03926   18.94 2.460254e-13
+3   1.5595   0.08693   17.94 6.232792e-13
+4   0.0557   0.05435   1.025 3.190142e-01
+5   0.0754   0.03926    1.92 7.086406e-02
+6   0.7181   0.08693    8.26 1.548373e-07
+
+Analysis of variance
+      DF     SS     MS       Fc p
+Model  5 1.1137 0.2227 159.6425 0
+Error 18 0.0251 0.0014           
+Total 23 1.1388 
+
+Selection criteria
+               
+R2       0.9780
+R2_Adj   0.9720
+SSR      0.0251
+AIC    -82.5880
+MSC     -0.4570

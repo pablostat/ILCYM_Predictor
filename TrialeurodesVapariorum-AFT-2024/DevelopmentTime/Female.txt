@@ -1,0 +1,58 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+             Value Std. Error      z        p
+(Intercept)  1.935     0.1616 11.974 4.84e-33
+Group18      0.158     0.2050  0.768 4.42e-01
+Group20     -0.185     0.1944 -0.953 3.41e-01
+Group25     -0.287     0.2160 -1.330 1.84e-01
+Group28     -0.315     0.2189 -1.437 1.51e-01
+Log(scale)  -0.217     0.0531 -4.087 4.37e-05
+
+Scale= 0.805 
+
+Log Normal distribution
+Loglik(model)= -569.1   Loglik(intercept only)= -573.4
+	Chisq= 8.66 on 4 degrees of freedom, p= 0.07 
+Number of Newton-Raphson Iterations: 3 
+n= 184 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+        Model      AIC Deviance    LogLik
+1     weibull 1151.880 203.7859 -572.9398
+2   lognormal 1144.121 196.0269 -569.0603
+3 loglogistic 1152.476 204.3821 -573.2379
+
+
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  15-1    15      8.5        6.925    1.935      0.144 0.039      0.067
+2  18-2    18      9.5        8.106    2.093      0.123 0.042      0.040
+3  20-3    20      5.0        5.754    1.750      0.174 0.056      0.062
+4  25-4    25      5.0        5.196    1.648      0.192 0.069      0.055
+5  28-5    28      5.5        5.055    1.620      0.198 0.072      0.054
+  Up.Lim_DR SE.Time DF
+1     0.222   1.859 71
+2     0.207   2.761 71
+3     0.286   1.859 71
+4     0.330   1.865 71
+5     0.341   1.839 71
+
+ *VIF is included as correction factor in SE 
+
+
+ MODEL CHECKING CONSIDERING TEMPERATURE: SUMMARY 
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  15-1    15      8.5        6.925    1.935      0.144 0.039      0.067
+2  18-2    18      9.5        8.106    2.093      0.123 0.042      0.040
+3  20-3    20      5.0        5.754    1.750      0.174 0.056      0.062
+4  25-4    25      5.0        5.196    1.648      0.192 0.069      0.055
+5  28-5    28      5.5        5.055    1.620      0.198 0.072      0.054
+  Up.Lim_DR SE.Time DF Frequency NBatchs Sex     ScaleU ScaleErr Surv  N
+1     0.222   1.859 71        25       1  NA -0.3146453 0.218948    1 25
+2     0.207   2.761 71        41       1  NA -0.3146453 0.218948    1 41
+3     0.286   1.859 71        56       1  NA -0.3146453 0.218948    1 56
+4     0.330   1.865 71        32       1  NA -0.3146453 0.218948    1 32
+5     0.341   1.839 71        30       1  NA -0.3146453 0.218948    1 30
+

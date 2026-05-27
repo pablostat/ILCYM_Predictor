@@ -1,0 +1,47 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+             Value Std. Error      z         p
+(Intercept)  2.124    0.04460  47.62  0.00e+00
+Group18-2   -0.211    0.04878  -4.32  1.55e-05
+Group20-3   -0.345    0.04735  -7.29  3.19e-13
+Group25-4   -0.179    0.05106  -3.50  4.68e-04
+Group28-5   -0.713    0.05226 -13.64  2.30e-42
+Log(scale)  -0.262    0.00934 -28.08 1.79e-173
+
+Scale= 0.769 
+
+Log Normal distribution
+Loglik(model)= -18122.2   Loglik(intercept only)= -18280.2
+	Chisq= 316.07 on 4 degrees of freedom, p= 0 
+Number of Newton-Raphson Iterations: 3 
+n= 5972 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+          Residual_Analysis
+loglikR       -18280.247378
+loglikF       -18122.211708
+ModelDev        1646.138099
+loglikSat     -17299.142659
+nullDev         1962.209439
+VIF               12.565940
+sqrt(VIF)          3.544847
+
+
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  15-1    15      8.5        8.362    2.124      0.120 0.019      0.082
+2  18-2    18      7.5        6.773    1.913      0.148 0.026      0.097
+3  20-3    20      6.5        5.922    1.779      0.169 0.028      0.113
+4  25-4    25      6.5        6.995    1.945      0.143 0.026      0.092
+5  28-5    28      4.5        4.099    1.411      0.244 0.045      0.155
+  Up.Lim_DR
+1     0.157
+2     0.198
+3     0.225
+4     0.194
+5     0.333
+
+ *VIF is included as correction factor in SE 
+

@@ -1,0 +1,25 @@
+
+NONLINEAR REGRESSION MODEL
+
+Model name: Quadratic
+Method: Marquardtr
+Formula:  r(T) =b0+b1.x+b2.(x^2) 
+
+Parameters
+   Estimate Std.Error t value     Pr(>|t|)
+b0   0.1151   0.00037   312.4 1.024642e-05
+b1  -0.0023   0.00376  -0.613 6.023046e-01
+b2    2e-04   0.00017   1.191 3.557434e-01
+
+Analysis of variance
+      DF     SS     MS     Fc     p
+Model  2 0.1773 0.0887 1.6522 0.377
+Error  2 0.1073 0.0537             
+Total  4 0.2847                    
+
+Selection criteria              
+R2      0.6230
+R2_Adj  0.2460
+SSR     0.1073
+AICc       Inf
+MSC    -1.6900
