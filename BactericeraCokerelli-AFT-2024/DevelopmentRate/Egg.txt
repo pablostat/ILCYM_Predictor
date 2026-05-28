@@ -1,0 +1,25 @@
+
+NONLINEAR REGRESSION MODEL
+
+Model name: Taylor
+Method: Marquardtr
+Formula:  r(T) = rm.exp(-(0.5).(-(x-Topt)/Troh)^2) 
+
+Parameters
+     Estimate Std.Error t value     Pr(>|t|)
+rm      0.213   0.02044   10.42 0.0018841819
+Topt  26.1968   1.96715   13.32 0.0009151473
+Troh   9.8387   1.02596    9.59 0.0024060041
+
+Analysis of variance
+      DF     SS     MS      Fc      p
+Model  2 4.1539 2.0770 76.7055 0.0027
+Error  3 0.0812 0.0271               
+Total  5 4.2351                      
+
+Selection criteria              
+R2      0.9810
+R2_Adj  0.9680
+SSR     0.0812
+AIC    39.2140
+MSC    -1.0190

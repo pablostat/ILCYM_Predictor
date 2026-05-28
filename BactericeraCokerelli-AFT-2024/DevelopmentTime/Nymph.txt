@@ -1,0 +1,53 @@
+
+Call:
+survreg(formula = Surv(start, stop, type = "interval2") ~ Group, 
+    data = dat, dist = modelo)
+             Value Std. Error     z         p
+(Intercept)  3.988     0.0252 158.0  0.00e+00
+Group15     -0.813     0.0321 -25.3 1.35e-141
+Group20     -1.156     0.0308 -37.5  0.00e+00
+Group25     -1.335     0.0318 -42.0  0.00e+00
+Log(scale)  -2.473     0.0566 -43.7  0.00e+00
+
+Scale= 0.0843 
+
+Log logistic distribution
+Loglik(model)= -571.4   Loglik(intercept only)= -830.7
+	Chisq= 518.62 on 3 degrees of freedom, p= 0 
+Number of Newton-Raphson Iterations: 5 
+n= 219 
+
+
+ MODEL CHECKING: DATA DIAGNOSTICS 
+        Model      AIC  Deviance    LogLik
+1     weibull 1209.677 158.57727 -601.8386
+2   lognormal 1149.695  98.59489 -571.8474
+3 loglogistic 1148.776  97.67632 -571.3881
+
+
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  10-1    10     54.5       53.936    3.988      0.019 0.001      0.017
+2  15-2    15     24.0       23.920    3.175      0.042 0.002      0.038
+3  20-3    20     16.5       16.968    2.831      0.059 0.002      0.054
+4  25-4    25     14.5       14.193    2.653      0.070 0.003      0.065
+  Up.Lim_DR SE.Time DF
+1     0.020   1.766 58
+2     0.045   0.996 58
+3     0.064   0.679 58
+4     0.076   0.585 58
+
+ *VIF is included as correction factor in SE 
+
+
+ MODEL CHECKING CONSIDERING TEMPERATURE: SUMMARY 
+  Group Tempr Time.Obs Time.Median. Log.Time DR.1.Time. SE.DR Low.Lim_DR
+1  10-1    10     54.5       53.936    3.988      0.019 0.001      0.017
+2  15-2    15     24.0       23.920    3.175      0.042 0.002      0.038
+3  20-3    20     16.5       16.968    2.831      0.059 0.002      0.054
+4  25-4    25     14.5       14.193    2.653      0.070 0.003      0.065
+  Up.Lim_DR SE.Time DF Frequency NBatchs Sex    ScaleU   ScaleErr      Surv  N
+1     0.020   1.766 58        40       1  NA -1.335028 0.03176841 0.6060606 66
+2     0.045   0.996 58        56       1  NA -1.335028 0.03176841 0.8615385 65
+3     0.064   0.679 58        65       1  NA -1.335028 0.03176841 0.9027778 72
+4     0.076   0.585 58        58       1  NA -1.335028 0.03176841 0.7945205 73
+
