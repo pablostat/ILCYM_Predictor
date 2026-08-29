@@ -216,9 +216,11 @@ server <- function(input, output, session) {
       if(input$OpcionSource=="NP"){
         
         TempsVec <- get_power(community = "AG",lonlat = c(CoordsI$lon, CoordsI$lat),pars = c("T2M_MIN","T2M_MAX"),
-                              dates = c("2023-01-01", "2023-12-31"), temporal_api = "DAILY")
+                              dates = c(Sys.Date() - 365, Sys.Date()-4), temporal_api = "DAILY")
+
+
         Table<-data.frame(tmin=TempsVec$T2M_MIN,tmax=TempsVec$T2M_MAX)
-        
+
         IndxByPointLP<-simultemp.dete.fluc(N=100,sexratio=0.5, isFixed=TRUE,Table=Table, xi=params$xi, steps=48,poli=1, params=params1)
         IndxByPointLP<-data.frame(Day=1:nrow(IndxByPointLP),IndxByPointLP[,c("r","Ro","GRR","T","lambda","Dt")])
         
@@ -227,7 +229,7 @@ server <- function(input, output, session) {
         
         LPs<-IndxByPointLP$Ro
         LPs2<-IndxByPointLP2$Ro
-        DateDly<-seq(as.Date("2025/5/26"), as.Date("2026/5/25"), "days")
+        DateDly<-seq(Sys.Date() - 365, Sys.Date()-4, "days")
       }
       
       if(input$OpcionSource=="WC"){
