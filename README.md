@@ -4,5 +4,5 @@ To improve accessibility for plant health researchers through an interactive web
 To download climate data, use this link:
 https://cgiar-my.sharepoint.com/:u:/g/personal/p_carhuapoma_cgiar_org/IQCZUzZh2a9JS58VtloJJxrJAbQc6Bx1HEUJRxiA_KDLgUk?e=WLGW8B
 
-To see the app in action on Shiny, use this link:
-https://ilcym.shinyapps.io/ILCYM_Predictor/
+To download the presence file as an example for evaluating multiple locations, you can download it from the following link:
+](https://cgiar-my.sharepoint.com/:t:/g/personal/p_carhuapoma_cgiar_org/IQAuQzjvhLDBT4oBfiXGId87ASfIJn8nGOpWS9OBUTOATWA?e=b9ytEc)
